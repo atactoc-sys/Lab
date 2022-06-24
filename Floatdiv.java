@@ -10,7 +10,7 @@ float f2 = 20.6f
 
 // to store the multiplied value
 
-float f= fl* f2;
+float f= fl/ f2;
 
 // to print the answer System.out.println("The answer is: "+f);
 }
