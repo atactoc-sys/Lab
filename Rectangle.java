@@ -6,8 +6,8 @@ public class Rectangle {
     private int breadth;
 
     Rectangle(){
-        this.length=78;
-        this.breadth =59;
+        this.length=80;
+        this.breadth =10;
     }
 
     public int getLength() {
@@ -29,17 +29,19 @@ public class Rectangle {
     public void area(int length, int breadth){
         this.length=length;
         this.breadth=breadth;
-        System.out.println("reectangle area  =  "+this.length*this.breadth);
+        System.out.println("new rectangle area  =  "+this.length*this.breadth);
     }
 }
 class TestRectangle{
     public static void main(String args[]){
         Rectangle obj = new Rectangle();
-        obj.setLength(123);
-        obj.setBreadth(236);
+        obj.setLength(80);
+        obj.setBreadth(10);
         System.out.println(obj.getLength());
         System.out.println(obj.getBreadth());
-        obj.area(68,54);
+        System.out.println("area  =  "+obj.getLength()*obj.getBreadth());
+        obj.area(56,87);
+
 
     }
 }
