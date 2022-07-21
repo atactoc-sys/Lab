@@ -7,7 +7,7 @@ public class FindDuplicateinArray {
         for (int i = 0; i < arr.length -1; i++){//to select an element
             for (int j = i + 1; j < arr.length; j++){// to compare the element
                 if ((arr[i] == arr[j]) && (i != j)){//logic to find duplicate
-                    System.out.println("duplicate  +  "+arr[j]);
+                    System.out.println("duplicate  =  "+arr[j]);
                 }
             }
         }
