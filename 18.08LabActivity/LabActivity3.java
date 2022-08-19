@@ -14,7 +14,7 @@ public class LabActivity3
         return M1;
     }
 
-    //METHOD TO GET CAPITAL
+    //  METHOD TO GET CAPITAL
     String receiveCapital(String CountryName)
     {
         System.out.println(M1.get(CountryName));
