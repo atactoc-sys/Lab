@@ -21,7 +21,7 @@ public class LabActivity3
         return M1.get(CountryName);
     }
 
-    //METHOD TO GET COUNTRY NAME
+    //  METHOD TO GET COUNTRY NAME
     String receiveCountry(String capitalname)
     {
         Set<Map.Entry<String,String>> set;
@@ -41,7 +41,7 @@ public class LabActivity3
         return null;
     }
 
-    //METHOD TO SWAP VALUES
+    //  METHOD TO SWAP VALUES
     HashMap<String,String> exchangeValue()
     {
         HashMap<String,String> M2 = new HashMap<String,String>();
@@ -77,7 +77,7 @@ public class LabActivity3
         return list;
     }
 
-    //MAIN METHOD
+    //  MAIN METHOD
     public static void main(String[] args)
     {
         LabActivity3 obj = new LabActivity3();
