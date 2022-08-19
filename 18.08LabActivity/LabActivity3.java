@@ -24,8 +24,10 @@ public class LabActivity3
     //METHOD TO GET COUNTRY NAME
     String receiveCountry(String capitalname)
     {
-        Set<Map.Entry<String,String>> set = M1.entrySet();
-        Iterator<Map.Entry<String,String>> it = set.iterator();
+        Set<Map.Entry<String,String>> set;
+        set = M1.entrySet();
+        Iterator<Map.Entry<String,String>> it;
+        it = set.iterator();
 
         while (it.hasNext())
         {
@@ -43,8 +45,10 @@ public class LabActivity3
     HashMap<String,String> exchangeValue()
     {
         HashMap<String,String> M2 = new HashMap<String,String>();
-        Set<Map.Entry<String,String>> set = M1.entrySet();
-        Iterator<Map.Entry<String,String>> it = set.iterator();
+        Set<Map.Entry<String,String>> set;
+        set = M1.entrySet();
+        Iterator<Map.Entry<String,String>> it;
+        it = set.iterator();
 
         while (it.hasNext())
         {
@@ -60,8 +64,10 @@ public class LabActivity3
     ArrayList<String> toArrayList()
     {
         ArrayList<String> list = new ArrayList<>();
-        Set<Map.Entry<String,String>> set = M1.entrySet();
-        Iterator<Map.Entry<String,String>> it = set.iterator();
+        Set<Map.Entry<String,String>> set;
+        set = M1.entrySet();
+        Iterator<Map.Entry<String,String>> it;
+        it = set.iterator();
 
         while (it.hasNext())
         {
