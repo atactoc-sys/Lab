@@ -1,6 +1,7 @@
 package Lab1808;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 public class LabActivity3
 {
@@ -14,24 +15,24 @@ public class LabActivity3
         return M1;
     }
 
-    //  METHOD TO GET CAPITAL
+    //METHOD TO GET CAPITAL
     String receiveCapital(String CountryName)
     {
         System.out.println(M1.get(CountryName));
         return M1.get(CountryName);
     }
 
-    //  METHOD TO GET COUNTRY NAME
+    //METHOD TO GET COUNTRY NAME
     String receiveCountry(String capitalname)
     {
-        Set<Map.Entry<String,String>> set;
+        Set<Entry<String,String>> set;
         set = M1.entrySet();
-        Iterator<Map.Entry<String,String>> it;
+        Iterator<Entry<String,String>> it;
         it = set.iterator();
 
         while (it.hasNext())
         {
-            Map.Entry<String,String> mw = it.next();
+            Entry<String,String> mw = it.next();
             if (mw.getValue().equals(capitalname))
             {
                 System.out.println(mw.getKey());
@@ -41,18 +42,18 @@ public class LabActivity3
         return null;
     }
 
-    //  METHOD TO SWAP VALUES
+    //METHOD TO SWAP VALUES
     HashMap<String,String> exchangeValue()
     {
         HashMap<String,String> M2 = new HashMap<String,String>();
-        Set<Map.Entry<String,String>> set;
+        Set<Entry<String,String>> set;
         set = M1.entrySet();
-        Iterator<Map.Entry<String,String>> it;
+        Iterator<Entry<String,String>> it;
         it = set.iterator();
 
         while (it.hasNext())
         {
-            Map.Entry<String,String> mw = it.next();
+            Entry<String,String> mw = it.next();
             M2.put(mw.getValue(),mw.getKey());
 
         }
@@ -64,20 +65,20 @@ public class LabActivity3
     ArrayList<String> toArrayList()
     {
         ArrayList<String> list = new ArrayList<>();
-        Set<Map.Entry<String,String>> set;
+        Set<Entry<String,String>> set;
         set = M1.entrySet();
-        Iterator<Map.Entry<String,String>> it;
+        Iterator<Entry<String,String>> it;
         it = set.iterator();
 
         while (it.hasNext())
         {
-            Map.Entry<String,String> mw = it.next();
+            Entry<String,String> mw = it.next();
             list.add(mw.getValue());
         }
         return list;
     }
 
-    //  MAIN METHOD
+    //MAIN METHOD
     public static void main(String[] args)
     {
         LabActivity3 obj = new LabActivity3();
