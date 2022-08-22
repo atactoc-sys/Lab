@@ -40,25 +40,13 @@ public class Book
                 throw new InvalidBookException("PRICE CAN NOT BE NEGATIVE");
             }
 
-            //  IF-ELSE-IF STATEMENT -- 3.
-            //  IF-ELSE-IF STATEMENT FOR THE CATEGORY.
-            //  IF CATEGORY SATISFY THIS STATEMENTS IT IS THEN GOOD TO GO.
+            //  SWITCH CASE FOR CATEGOTY 
+            //  IF STSTEMENT IS "Science", "Friction", "Technology", "Other" THEN IT IS GOOD TO GO.
             //  OTHERWISE, THROW THE DEFINED EXCEPTION 'InvalidBookException'.
-            if (category.equals("Science"))
-            {
-                this.category = category;
-            } else if (category.equals("Friction"))
-            {
-                this.category = category;
-            } else if (category.equals("Technology"))
-            {
-                this.category = category;
-            } else if (category.equals("Other"))
-            {
-                this.category = category;
-            }else
-            {
-                throw new InvalidBookException("CATEGORY MUST BE 'Science' or 'Friction' or 'Technology' or 'Other'");
+            switch (category) {
+                case "Science", "Friction", "Technology", "Other" -> this.category = category;
+                default ->
+                        throw new InvalidBookException("CATEGORY MUST BE 'Science' or 'Friction' or 'Technology' or 'Other'");
             }
 
             this.title = title;
