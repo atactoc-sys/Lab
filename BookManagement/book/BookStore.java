@@ -10,7 +10,7 @@ public class BookStore
     //  'addBook()' TO ADD BOOK OBJECT INTO THE ARRAYLIST.
     public void addBook(Book b)
     {
-        //  ADDING BOOK OBJECTS.
+        //  ADDING BOOK OBJECT.
         list.add(b);
     }
 
@@ -25,7 +25,7 @@ public class BookStore
             if (title.contains(b.title))
             {
                 //  PRINT STATEMENT.
-                System.out.println("BookId  :  "+"  "+b.bookId+"  "+"Title  :  "+"  "+b.title+"  "+"Author  :  "+"  "+b.author+"  "+"Category  :  "+"  "+b.category+"  "+"Price  :  "+"  "+b.price);
+                System.out.println("BookId  :  "+b.bookId+" , "+"Title  :  "+b.title+" , "+"Author  :  "+b.author+" , "+"Category  :  "+b.category+" , "+"Price  :  "+b.price);
 
                 //  BREAK STATEMENT TO BREAK THE FLOW.
                 break;
@@ -52,7 +52,7 @@ public class BookStore
             if (author.contains(b.author))
             {
                 //  PRINT STATEMENT.
-                System.out.println("BookId  :  "+"  "+b.bookId+"  "+"Title  :  "+"  "+b.title+"  "+"Author  :  "+"  "+b.author+"  "+"Category  :  "+"  "+b.category+"  "+"Price  :  "+"  "+b.price);
+                System.out.println("BookId  :  "+b.bookId+" , "+"Title  :  "+b.title+" , "+"Author  :  "+b.author+" , "+"Category  :  "+b.category+" , "+"Price  :  "+b.price);
 
                 //  BREAK STATEMENT TO BREAK THE FLOW.
                 break;
@@ -76,8 +76,7 @@ public class BookStore
         for (Book b : list)
         {
             //  PRINT STATEMENT.
-            System.out.println("BookId  :  "+"  "+b.bookId+"  "+"Title  :  "+"  "+b.title+"  "+"Author  :  "+"  "+b.author+"  "+"Category  :  "+"  "+b.category+"  "+"Price  :  "+"  "+b.price);
-
+            System.out.println("BookId  :  "+b.bookId+" , "+"Title  :  "+b.title+" , "+"Author  :  "+b.author+" , "+"Category  :  "+b.category+" , "+"Price  :  "+b.price);
             //  BREAK STATEMENT TO BREAK THE FLOW.
             break;
         }
