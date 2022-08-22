@@ -10,7 +10,7 @@ public class BookStore
     //  'addBook()' TO ADD BOOK OBJECT INTO THE ARRAYLIST.
     public void addBook(Book b)
     {
-        //  ADDING BOOK OBJECT.
+        //  ADDING BOOK OBJECTS.
         list.add(b);
     }
 
