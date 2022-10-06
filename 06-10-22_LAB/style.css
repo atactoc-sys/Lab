@@ -1,0 +1,16 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    
+    background-image: url(./img/3980482.png);
+}
+.container{
+    max-width: 550;
+    width: 100;
+}
